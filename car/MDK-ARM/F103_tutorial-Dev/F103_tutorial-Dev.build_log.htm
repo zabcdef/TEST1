@@ -1,0 +1,98 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 2265011, HP Inc., LIC=JL28G-V4EE9-BS3YX-HGA5N-S74G5-ZMRTZ
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+D:\CARTEST\rm2023mbf\MDK-ARM\F103_tutorial-Dev.uvprojx
+Project File Date:  12/14/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'F103_tutorial-Dev'
+compiling example_task.c...
+..\Tasks\Src\example_task.c(119): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(GPIOB,GPIO_PIN_14,0);
+..\Tasks\Src\example_task.c(120): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(GPIOB,GPIO_PIN_9,1);
+..\Tasks\Src\example_task.c(121): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,0);
+..\Tasks\Src\example_task.c(131): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(GPIOB,GPIO_PIN_14,1);
+..\Tasks\Src\example_task.c(132): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(GPIOB,GPIO_PIN_9,0);
+..\Tasks\Src\example_task.c(133): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,1);
+..\Tasks\Src\example_task.c(143): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOB,GPIO_PIN_14,0);
+..\Tasks\Src\example_task.c(144): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOB,GPIO_PIN_9,0);
+..\Tasks\Src\example_task.c(145): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,1);
+..\Tasks\Src\example_task.c(156): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOB,GPIO_PIN_14,1);
+..\Tasks\Src\example_task.c(157): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOB,GPIO_PIN_9,1);
+..\Tasks\Src\example_task.c(158): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,0);
+..\Tasks\Src\example_task.c(167): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOB,GPIO_PIN_14,1);
+..\Tasks\Src\example_task.c(168): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOB,GPIO_PIN_9,1);
+..\Tasks\Src\example_task.c(169): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,1);
+..\Tasks\Src\example_task.c(181): warning:  #111-D: statement is unreachable
+  		delay(5);
+..\Tasks\Src\example_task.c(46): warning:  #177-D: variable "forward"  was declared but never referenced
+  	float forward = control.channel[1];
+..\Tasks\Src\example_task.c(47): warning:  #177-D: variable "direction"  was declared but never referenced
+  	float direction = control.channel[0];
+..\Tasks\Src\example_task.c: 18 warnings, 0 errors
+linking...
+Program Size: Code=26956 RO-data=392 RW-data=360 ZI-data=18192  
+FromELF: creating hex file...
+"F103_tutorial-Dev\F103_tutorial-Dev.axf" - 0 Error(s), 18 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_F103_tutorial-Dev
+  C:\Users\22650\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\22650\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
