@@ -170,12 +170,13 @@ void Example_task(void * arg) {
 				}
 			}
 		}
-		//PWM_SetDutyRatio(&pwm2[1],1);
-		//PWM_SetDutyRatio(&pwm2[2],1);
-		//PWM_SetDutyRatio(&pwm2[3],1);
-		//PWM_SetDutyRatio(&pwm2[4],1);
-		/* USER CODE END */
+		float zbf = 0;
+		zbf =	adc_data[1].data;
+		//left 5
+		//middle 3
+		//right 0		/* USER CODE END */
 		delay(5);
+		
 }
 
 
