@@ -49,7 +49,7 @@ void Example_task(void * arg) {
 	/* USER CODE END */
 	while(1) {
 		/*
-		!!!!!this is controller!!!!! Don't use trace module at a same time!!!!!!!!!!!!!!!
+		!!!!!this is code for controller!!!!! Don't use trace module at the same time!!!!!!!!!!!!!!!
 			if (control.channel[1] > 0.2){
 				PWM_SetDutyRatio(&pwm1[4],1);
 				HAL_GPIO_WritePin(GPIOB,GPIO_PIN_14,0);
@@ -94,7 +94,7 @@ void Example_task(void * arg) {
 				}
 			}
 			*/
-			//!!!!!This is trace module!!!!!! Don't use controller part at a same time!!!!!!!!!!!!! 
+			//!!!!!This is trace module!!!!!! Don't use controller part at the same time!!!!!!!!!!!!! 
 			if (adc_data[0].data > 2050 && adc_data[3].data < 2250 && adc_data[5].data > 2100){
 				PWM_SetDutyRatio(&pwm1[4],1);
 				HAL_GPIO_WritePin(GPIOB,GPIO_PIN_14,0);
